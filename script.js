@@ -1,7 +1,7 @@
 const input = document.getElementById("fname");
 
 
-firstWord(s){
+function firstWord(s){
 	input.addEventListener("blur", function () {
   return input.value.toUpperCase();
 	
