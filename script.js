@@ -1,16 +1,14 @@
 const input = document.getElementById("fname");
 
+    function firstWord() {
+      input.addEventListener("blur", function () {
+        input.value = input.value.toUpperCase();
+      });
+    }
 
-function firstWord(s){
-	input.addEventListener("blur", function () {
-  return input.value.toUpperCase();
-	
-	
-});
+    // Set initial value from prompt
+    const s = prompt("Enter String:");
+    input.value = s;
 
-}
-
-// Do not change the code below
-
-const s = prompt("Enter String:");
-alert(firstWord(s));
+    // Attach the blur handler
+    firstWord();
